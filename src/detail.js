@@ -1,4 +1,4 @@
-fetch('src/monuments.json')
+fetch('https://raw.githubusercontent.com/aleksejbernatovic/site/refs/heads/master/src/monuments.json')
   .then(response => response.json())
   .then(monuments => {
     const params = new URLSearchParams(window.location.search);
